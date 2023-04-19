@@ -1,23 +1,15 @@
 <style lang="scss" scoped>
-body {
-  margin: 0 auto;
-}
-
 #app {
-  width: 100%;
-  height: 100%;
-  display: flex;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  background-color: #777;
 }
 </style>
 
 <template>
-  <div id="app" @dragstart.prevent @selectstart.prevent>
-    <fit-layout :width="1920" :height="1080">
-      <ThreeScene></ThreeScene>
-    </fit-layout>
+  <div id="app">
+    <ThreeScene></ThreeScene>
   </div>
 </template>
 
